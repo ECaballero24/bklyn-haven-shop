@@ -1,4 +1,5 @@
 const { readJSONFile, writeJSONFile } = require('./src/helpers');
+const { create } = require('./src/soleController');
 
 
 
@@ -10,15 +11,22 @@ const { readJSONFile, writeJSONFile } = require('./src/helpers');
 const reveal = console.log;
 const shoes = readJSONFile('./data', 'shoes.json');
 
+
+
 function run() {
   const action = process.argv[2];
   const sole = process.argv[3];
+
+  let writeToFile = false;
+  let updatedShoes = [];
+
   switch (action) {
     case 'index':
       reveal(action, shoes);
       break;
-    case 'create':
-      reveal(action, sole);
+    case "create":
+      updatedShoes = create(shoes, sole);
+      writeToFile = true;
       break;
     case 'show':
       reveal(action, sole);
@@ -35,6 +43,10 @@ function run() {
     default:
       reveal('Nope! Kick it or try again.');
   }
-}
+  if (writeToFile) {
+    writeJSONFile('./data', 'shoes.json', updatedShoes);
+  }
+
+};
 
 run();
