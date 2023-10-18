@@ -1,5 +1,20 @@
 [
- {"name":"air max 99","id":"PF_HFM","price":100},
- {"name":"air max 99","id":"CWi9SY","price":100}
-
+  {
+    "id": "26sN0x",
+    "name": "airjordan1",
+    "price": 100,
+    "inStock": false
+  },
+  {
+    "id": "P37vty",
+    "name": "airjordan2",
+    "price": 100,
+    "inStock": false
+  },
+  {
+    "id": "Miqbi3",
+    "name": "airmax95",
+    "price": 100,
+    "inStock": false
+  }
 ]

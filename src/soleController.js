@@ -3,12 +3,17 @@ const infoAbtShoes = require('../data/infoAbtShoes.json');
 
 
 function create(shoes, soleName) {
-    const sole = { name: soleName, id: nanoid(6), price: infoAbtShoes.priceInCents || 100 };
+    const sole = {  id: nanoid(6), name: soleName,  price: infoAbtShoes.priceInCents || 100, inStock: infoAbtShoes.inStock || false };
     shoes.push(sole);
     return shoes;
   }
   //test
-  
+  function index(shoes) {
+    return shoes.map((sole) => sole.id + ' ' + sole.name).join('\n');
+  }
+
+
   module.exports = {
-    create
+    create,
+    index,
   };

@@ -1,5 +1,5 @@
 const { readJSONFile, writeJSONFile } = require('./src/helpers');
-const { create } = require('./src/soleController');
+const { create, index } = require('./src/soleController');
 
 
 
@@ -22,7 +22,8 @@ function run() {
 
   switch (action) {
     case 'index':
-      reveal(action, shoes);
+      const viewShoes = index(shoes);
+      reveal(viewShoes);
       break;
     case "create":
       updatedShoes = create(shoes, sole);

@@ -1,38 +1,38 @@
 [
     {
-      "id": "1",
+      
       "sneakerName": "Air Jordan 5",
       "priceInCents": 15000,
-      "inStock": true,
-      "yearReleased": 1990
+      "inStock": true
+      
     },
     {
-      "id": "2",
+      
       "sneakerName": "Air Max 90",
       "priceInCents": 12000,
-      "inStock": false,
-      "yearReleased": 1990
+      "inStock": false
+      
     },
     {
-      "id": "3",
+      
       "sneakerName": "Air Jordan 6",
       "priceInCents": 18000,
-      "inStock": true,
-      "yearReleased": 1991
+      "inStock": true
+      
     },
     {
-      "id": "4",
+      
       "sneakerName": "Air Jordan 7",
       "priceInCents": 12500,
-      "inStock": true,
-      "yearReleased": 1992
+      "inStock": true
+      
     },
     {
-      "id": "5",
+      
       "SneakerName": "Air Max 95",
       "priceInCents": 15500,
-      "inStock": false,
-      "yearReleased": 1995
+      "inStock": false
+      
     }
   ]
   
