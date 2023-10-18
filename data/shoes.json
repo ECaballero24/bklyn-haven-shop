@@ -1,11 +1,5 @@
 [
   {
-    "id": "26sN0x",
-    "name": "airjordan1",
-    "price": 100,
-    "inStock": false
-  },
-  {
     "id": "P37vty",
     "name": "airjordan2",
     "price": 100,
@@ -18,8 +12,14 @@
     "inStock": false
   },
   {
-    "id": "cO8t3z",
-    "name": "Air Jordan 5",
+    "id": "_qsJBP",
+    "name": "airmax97",
+    "price": 100,
+    "inStock": false
+  },
+  {
+    "id": "5f_Slv",
+    "name": "Air Max Pillar",
     "price": 100,
     "inStock": false
   }

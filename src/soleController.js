@@ -15,12 +15,42 @@ function create(shoes, soleName) {
 
   function show(shoes, soleId) {
     const sole = shoes.find((sole) => sole.id === soleId);
-    return sole.id + ' ' + sole.name + ' ' + sole.price + ' dollars';
+    return sole.id + ' ' + sole.name + ' ' + '$' + sole.price + ' USD';
   }
 
+
+  const reveal = console.log;
+
+function destroy(shoes, soleId) {
+  const index = shoes.findIndex((sole) => sole.id === soleId);
+  if (index > -1) {
+    shoes.splice(index, 1);
+    reveal('Shoes removed from collection');
+    return shoes;
+  } else {
+    reveal('Shoes not found. Try again');
+    return shoes;
+  }
+};
+
+function edit(shoes, soleId, updatedShoe) {
+  const index = shoes.findIndex((sole) => sole.id === soleId);
+  if (index > -1) {
+    shoes[index].id = soleId;
+    shoes[index].name = updatedShoe;
+    shoes[index].price = infoAbtShoes.updatedShoe || 100;
+    reveal('Shoes updated');
+    return shoes;
+  } else {
+    reveal('NOPE!! Try again');
+    return shoes;
+  }
+}
 
   module.exports = {
     create,
     index,
     show,
+    destroy,
+    edit,
   };
