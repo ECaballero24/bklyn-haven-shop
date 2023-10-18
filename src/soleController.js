@@ -13,7 +13,14 @@ function create(shoes, soleName) {
   }
 
 
+  function show(shoes, soleId) {
+    const sole = shoes.find((sole) => sole.id === soleId);
+    return sole.id + ' ' + sole.name + ' ' + sole.price + ' dollars';
+  }
+
+
   module.exports = {
     create,
     index,
+    show,
   };

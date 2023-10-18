@@ -1,5 +1,5 @@
 const { readJSONFile, writeJSONFile } = require('./src/helpers');
-const { create, index } = require('./src/soleController');
+const { create, index, show } = require('./src/soleController');
 
 
 
@@ -30,7 +30,8 @@ function run() {
       writeToFile = true;
       break;
     case 'show':
-      reveal(action, sole);
+      const shoesView = show(shoes, sole);
+      reveal(shoesView);
       break;
     case 'update':
       reveal(action, sole);
