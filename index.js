@@ -1,5 +1,5 @@
 const { readJSONFile, writeJSONFile } = require('./src/helpers');
-const { create, index, show, destroy, edit } = require('./src/soleController');
+const { create, index, show, destroy, edit, tally } = require('./src/soleController');
 
 
 
@@ -41,8 +41,8 @@ function run() {
       updatedShoes = destroy(shoes, sole);
       writeToFile = true;
       break;
-    case 'score':
-      reveal(action);
+    case 'tally':
+      reveal(`Current points sum of all animals you've added to your database:`, tally(shoes));;
       break;
     default:
       reveal('Nope! Kick it or try again.');

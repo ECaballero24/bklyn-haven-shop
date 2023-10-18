@@ -45,6 +45,10 @@ function edit(shoes, soleId, updatedShoe) {
     reveal('NOPE!! Try again');
     return shoes;
   }
+};
+
+function tally(shoes) {
+  return shoes.reduce((acc, current) => acc + current.infoAbtShoes, 0);
 }
 
   module.exports = {
@@ -53,4 +57,5 @@ function edit(shoes, soleId, updatedShoe) {
     show,
     destroy,
     edit,
+    tally,
   };

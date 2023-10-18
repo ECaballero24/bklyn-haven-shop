@@ -1,37 +1,33 @@
 [
     {
       
-      "sneakerName": "Air Jordan 5",
-      "priceInCents": 15000,
-      "inStock": true
       
-    },
-    {
+      "airjordan 1": 15000,
       
-      "sneakerName": "Air Max 90",
-      "priceInCents": 12000,
-      "inStock": false
       
-    },
-    {
+   
       
-      "sneakerName": "Air Jordan 6",
-      "priceInCents": 18000,
-      "inStock": true
+    
+      "aj2": 12000,
+   
       
-    },
-    {
+  
       
-      "sneakerName": "Air Jordan 7",
-      "priceInCents": 12500,
-      "inStock": true
       
-    },
-    {
+      "aj3": 18000,
       
-      "SneakerName": "Air Max 95",
-      "priceInCents": 15500,
-      "inStock": false
+      
+  
+      
+     
+      "am95": 12500,
+      
+      
+   
+      
+      
+      "am97": 15500
+      
       
     }
   ]
